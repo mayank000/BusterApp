@@ -94,11 +94,4 @@ def taskchild(request,parent_id):
         return HttpResponseRedirect(url_link)
     return render (request,'busterapp/taskchild.jinja', {'form' : form , 'tasks' : tasks, 'childs' : childs  } ) 
 
-def signup(request):
-    if request.method == "POST":
-        email = request.POST.get('email')
-        password = request.POST.get('pswd')
-        pass
-        return HttpResponseRedirect('/login')
-    return render(request, 'busterapp/signup.jinja', {})
 
