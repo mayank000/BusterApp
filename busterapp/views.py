@@ -31,6 +31,7 @@ def registration(request):
             return HttpResponseRedirect('/login')
     return render(request, 'busterapp/registration.jinja', { 'form': form})   
 
+#extra branch changes 
 @login_required(login_url='/login')
 def project(request):
     form = ProjectForm()
