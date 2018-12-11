@@ -21,7 +21,7 @@ def home(request):
     projects = Project.objects.filter(added_by = request.user)
     return render(request, 'busterapp/home.jinja', {'users_data' : users_data , 'projects' : projects})
 
-
+#registration page here
 def registration(request):
     form = RegistrationForm()
     if request.method == "POST":
