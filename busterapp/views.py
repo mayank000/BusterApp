@@ -93,5 +93,3 @@ def taskchild(request,parent_id):
         form_partial.save()
         return HttpResponseRedirect(url_link)
     return render (request,'busterapp/taskchild.jinja', {'form' : form , 'tasks' : tasks, 'childs' : childs  } ) 
-
-
