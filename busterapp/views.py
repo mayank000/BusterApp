@@ -42,6 +42,7 @@ def project(request):
             return HttpResponseRedirect('/')
     return render(request, 'busterapp/project.jinja', { 'form': form , })
 
+#update project comment
 @login_required(login_url='/login')
 def update_project(request,project_id):
     child = Task.objects.filter(parent=None)
